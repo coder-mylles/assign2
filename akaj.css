@@ -6,12 +6,12 @@
   #header{
     left: 50%;
     margin-left: -500px;
-    background:url(images/logo.png) no-repeat;
+    background:url(name-is.jpg) no-repeat;
     width:1000px;
     height:200px;
   }
   body {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(236, 232, 232);
   }
    
   h1 {
@@ -26,15 +26,15 @@
   }
   p {
     font-family: sans-serif;
-    color: rgb(243, 242, 248);
+    color: rgb(9, 9, 10);
   }
   
   p2 {
     font-family: sans-serif;
-    color: rgb(243, 242, 248);
+    color: rgb(2, 2, 2);
   }
   ul {
     line-height: 40px;
-    color: rgb(243, 242, 248);
+    color: rgb(7, 7, 7);
 
   }
