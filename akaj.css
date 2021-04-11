@@ -28,7 +28,13 @@
     font-family: sans-serif;
     color: rgb(9, 9, 10);
   }
+
+  p1 {
+    font-family: sans-serif;
+    color: rgb(9, 9, 10);
+    font-size: 36px;
   
+  }
   p2 {
     font-family: sans-serif;
     color: rgb(2, 2, 2);
