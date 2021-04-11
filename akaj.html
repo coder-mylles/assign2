@@ -24,7 +24,7 @@
  
   <body>
     <div class="jumbotron">
-      <h1 class="display-4">Hello Good people</h1>
+      <h1 class="display-4">AKAN NAME GENERATOR</h1>
       <p class="lead">This is a simple website whereby we let you know your akan name excited ?</p>
       <hr class="my-4">
       <p>Well here we go ......</p>
@@ -44,7 +44,35 @@
       <br>
       <br>
       <p class="lead">Select your date of birth</p>
-      <input type="date"> 
+      
+      <form action="#" onsubmit="deriveAkanName()">
+        <input
+          class="form-control"
+          type="number"
+          min="1"
+          max="31"
+          name="day"
+          placeholder="Day"
+          required
+        />
+        <input
+          class="form-control"
+          type="number"
+          min="1"
+          max="12"
+          name="month"
+          placeholder="Month"
+          required
+        />
+        <input
+          class="form-control"
+          type="number"
+          min="1920"
+          max="2019"
+          name="year"
+          placeholder="Year"
+          required
+        />
       <br>
       <br>
       <button type="button" class="btn btn-outline-dark">Submit</button>

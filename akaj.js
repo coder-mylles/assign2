@@ -1,28 +1,37 @@
 <script>
-function get_birth()
-    {
-		var birth_date = new Date(document.getElementById("birth_date").value);
-		var birth_date_day = birth_date.getDate();
-		var birth_date_month = birth_date.getMonth();
-        var birth_date_year = birth_date.getFullYear();
+zeroBasedCentury = parseInt(yearOfBirth / 100);
+  toTellcentury = yearOfBirth % 100;
 
-		var today_date = new Date();
-		var today_day = today_date.getDate();
-        var today_month = today_date.getMonth();
-        var today_year = today_date.getFullYear();
+  
+  if (monthOfYear <= 2) {
+    monthOfYear += 12;
+    yearOfCentury -= 1;
+    yearOfBirth -= 1;
+  }
 
-		var calculated_age = 0;
+  // Split year to centuryCode & yearCode
+  zeroBasedCentury = parseInt(yearOfBirth / 100);
+  yearOfCentury = yearOfBirth % 100;
 
-		if (today_month > birth_date_month) calculated_age = today_year - birth_date_year;
-		else if (today_month == birth_date_month)
-		{
-			if (today_day >= birth_date_day) calculated_age = today_year - birth_date_year;
-            else calculated_age = today_year - birth_date_year - 1;
-		}
-		else calculated_age = today_year - birth_date_year - 1;
+  let dayOfWeek =
+    (dayOfMonth +
+      parseInt(
+@@ -72,15 +72,15 @@ function calculateWeekDay(birthDate) {
+ */
+function deriveAkanName() {
+  let formData = fetchFormData();
+  let userBirthDate, userGender, dayOfBirth;
+  let userBirthDate, userGender, dayOfWeek;
 
-		var output_value = calculated_age;
-        document.getElementById("calculated_age").innerHTML = calculated_age;
-    }
-    }
-</script>
+  [userGender, ...userBirthDate] = formData;
+  dayOfBirth = calculateWeekDay(userBirthDate);
+  dayOfWeek = calculateWeekDay(userBirthDate);
+
+  if (userGender === "Male") {
+    alert("Your Akan Name is: " + maleAkanNames[dayOfBirth]);
+    alert("Your Akan Name is: " + maleAkanNames[dayOfWeek]);
+  } else {
+    alert("Your Akan Name is: " + femaleAkanNames[dayOfBirth]);
+    alert("Your Akan Name is: " + femaleAkanNames[dayOfWeek]);
+  }
+  </script>
