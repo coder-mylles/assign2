@@ -76,3 +76,7 @@ ul {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+form {
+  width: 1000px;
+  margin: 0 auto;
+}
