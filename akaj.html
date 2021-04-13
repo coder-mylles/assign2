@@ -37,7 +37,8 @@
       <div class="form-group col-md-5">
         <label for="inputState">Gender</label>
         <select id="inputState" class="form-control">
-
+          
+          <option disabled selected>Gender</option>
           <option>MALE</option>
           <option>FEMALE</option>
         </select>
@@ -48,10 +49,12 @@
       <p class="lead">Select your date of birth</p>
 
       <form action="#" onsubmit="ObtainName()">
-        <input class="form-control" type="NBR" min="1" max="31" name="day" placeholder="DD" required />
-        <input class="form-control" type="NBR" min="1" max="12" name="month" placeholder="Month" required />
-        <input class="form-control" type="NBR" min="1920" max="2021" name="year" placeholder="Year" required />
-
+        <input class="form-control" type="number" min="1" max="31" name="day" placeholder="DD" required />
+        <br>
+        <input class="form-control" type="number" min="1" max="12" name="month" placeholder="Month" required />
+        <br>
+        <input class="form-control" type="number" min="1920" max="2021" name="year" placeholder="Year" required />
+        <br>
         <br>
         <br>
         <button type="button" class="btn btn-outline-dark">Submit</button>
@@ -59,14 +62,14 @@
       </ul>
       
 
-      <h4 id=display-name><strong>And your akan name is...:</strong></h4>
+      <h4 id=display-name><strong>And your akan name is...:</strong></h4> <p id="result"></p>
       <p id="result"></p>
 
-      <link rel="stylesheet" type="text/css" href="akaj.js">
-      <link rel="stylesheet" type="text/css" href="js/bootstrap.bundle.js">
+     
   </body>
   </div> 
   </div>
   </div>
-
+  <script src="akaj.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
 </html>
