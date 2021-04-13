@@ -75,6 +75,7 @@ ul {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  color: rgb(7, 7, 7);
 }
 form {
   width: 1000px;
