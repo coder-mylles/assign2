@@ -1,10 +1,10 @@
 # Project name
-Akan NAme generator
+Akan Name generator
 ## Author
 Martin Mylles
 
 ## Description
-1. This is a website that otains somones Akan name according to their birthday
+1. This is a website that enables someone to obtain their AKAN name by inputing their details.
 ### Prerequisites
 1. You need to have git installed
 2. You can install it with the following command in your terminal
