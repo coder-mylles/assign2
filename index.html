@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Akan Name Generator</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">AKAN NAME GENERATOR</h1>
+        <p class="lead">This is a simple website whereby we let you know your akan name excited ?</p>
+        <hr class="my-4">
+        <p>Well here we go ......</p>
+        <br>
+      <div class="col-md-4">
+        <form action="#" onsubmit="deriveName()">
+          <input class="form-control" type="number" min="1" max="31" name="day" placeholder="Day" required />
+          <br>
+          <input class="form-control" type="number" min="1" max="12" name="month" placeholder="Month" required />
+          <br>
+          <input class="form-control" type="number" min="1920" max="2019" name="year" placeholder="Year" required />
+          <br>
+          <select class="form-control" id="gender" name="gender">
+            <option disabled selected>Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+          <br>
+          <button class="btn btn-block btn-outline-dark" type="submit">
+            Get name..
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="akaj.js"></script>
+
+</html>

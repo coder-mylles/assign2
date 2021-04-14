@@ -1,4 +1,4 @@
-const maleAkanNames = [
+const maleNames = [
   "Kwame",
   "Kwasi",
   "Kwadwo",
@@ -7,7 +7,7 @@ const maleAkanNames = [
   "Yaw",
   "Kofi"
 ];
-const femaleAkanNames = [
+const femaleNames = [
   "Ama",
   "Akosua",
   "Adwoa",
@@ -70,9 +70,9 @@ function deriveName() {
   dayOfWeek = calculateWeekDay(userBirthDate);
 
   if (userGender === "Male") {
-    alert("Your Akan Name is: " + maleAkanNames[dayOfWeek]);
+    alert("Your Akan Name is: " + maleNames[dayOfWeek]);
   } else {
-    alert("Your Akan Name is: " + femaleAkanNames[dayOfWeek]);
+    alert("Your Akan Name is: " + femaleNames[dayOfWeek]);
   }
   
   return false;
